@@ -47,3 +47,32 @@ header {
     align-items: center;
     background-color: rgb(255, 255, 255, 0.75);
 }
+
+.menu {
+    display: flex;
+}
+
+.menu li {
+    width: 25%;
+    border-left: 1px solid rgb(47, 47, 155);
+}
+
+.menu li:last-child {
+    border-right: 1px solid rgb(47, 47, 155);
+}
+
+.menu a {
+    display: block;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: rgb(47, 47, 155);
+    font-size: 21px;
+}
+
+.menu a:hover {
+    background-color: rgb(47, 47, 155);
+    color: white;
+}

@@ -2,7 +2,6 @@
     box-sizing: border-box;
 
 }
-
 body {
     font-family: 'Roboto', sans-serif;
     background-image: url("patt.png");
@@ -48,31 +47,115 @@ header {
     background-color: rgb(255, 255, 255, 0.75);
 }
 
+
 .menu {
     display: flex;
 }
 
-.menu li {
+.menu .item {
     width: 25%;
-    border-left: 1px solid rgb(47, 47, 155);
+    border-left: 1px solid #2c71b8;
 }
 
-.menu li:last-child {
-    border-right: 1px solid rgb(47, 47, 155);
+.menu .item:last-child {
+    border-right: 1px solid #2c71b8;
 }
 
-.menu a {
+.menu .menu-link {
     display: block;
     height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    color: rgb(47, 47, 155);
+    color: #2c71b8;
     font-size: 21px;
 }
 
-.menu a:hover {
-    background-color: rgb(47, 47, 155);
+.menu-link:hover{
+    background-color:#2c71b8; 
     color: white;
+}
+
+
+
+
+
+.sub-menu-link:hover{
+    background-color: white;
+    color: #2c71b8;
+}
+
+
+.sub-menu {
+    display: none;
+    position: absolute;
+    width: max-content;
+    font-size: 21px;
+    left: -1px;
+}
+
+.item:hover .sub-menu{
+    display: block;
+    background-color: #2c71b8;
+}
+.item{
+    position: relative;
+    text-decoration: none;
+}
+
+.sub-menu-link{
+    display: block;
+    text-decoration: none;
+    padding: 15px 44px;
+    line-height: 100%;
+    color: white;
+}
+
+.sub-menu:hover .menu-link{
+    background-color: #2c71b8;
+}
+
+
+
+.search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0px;
+}
+
+form {
+
+    display: flex;
+    border: 1px solid #2c71b8;
+    height: 40px;
+}
+
+input {
+    border: none;
+    background: transparent;
+}
+
+.button-search {
+    background-color: #2c71b8;
+;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0;
+    margin: 5px;
+    cursor: pointer;
+    
+}
+
+.button-buy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border: 0;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
 }
